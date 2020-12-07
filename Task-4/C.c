@@ -70,7 +70,7 @@ void main()
 	}
 	if(queen(board,a))
 	{
-		printf("YES\n");
+		printf("The possible board of size %d is \n",a);
 		printBoard(board);
 	}
 	else printf("NO");
