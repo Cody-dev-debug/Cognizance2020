@@ -5,8 +5,11 @@ int a;
 void printBoard(int board[a][a])
 {
     for(int i=0; i<a;i++)
-	    {for(int j=0;j<a;j++)
-	    printf("%d",board[i][j]);
+    {
+	    for(int j=0;j<a;j++)
+	    {
+		    printf("%d",board[i][j]);
+	    }
 	    printf("\n");}
 }
 
