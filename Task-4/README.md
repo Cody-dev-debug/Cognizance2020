@@ -126,6 +126,7 @@ If the number of queens to be placed becomes 0, then it's over, we found a solut
 |0|0|0|0|
 |0|0|0|0|
 |0|0|0|0|
+#### And so on .............
 
 *After repeating the above same process of placing queen and bactracking several times we find the solution which is the board shown below:*
 |||||
