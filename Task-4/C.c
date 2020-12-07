@@ -37,8 +37,6 @@ bool attacked(int board[a][a], int x, int y)
 
 bool queen(int board[a][a],int n)
 {
-    // printf("Hi%d\n", n);
-    // printBoard(board);
 	if(n==0)
 	return true;
 	int col = a - n;
@@ -64,8 +62,12 @@ void main()
 	scanf("%d",&a);
 	int board[a][a];
 	for(int i=0;i<a;i++)
-	for(int j=0;j<a;j++)
-	board[i][j]=0;
+	{
+		for(int j=0;j<a;j++)
+		{
+			board[i][j]=0;
+		}
+	}
 	if(queen(board,a))
 	{
 		printf("YES\n");
