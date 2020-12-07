@@ -43,12 +43,11 @@ bool queen(int board[a][a],int n)
 	{
 		for(int j=0;j<a;j++)
 		{
-			if(attacked(board,i,j)) {
-			 //   printf("%d\n", n);
+			if(attacked(board,i,j)) 
+			{
 			    continue;
 			}
 			board[i][j]=1;
-            // printBoard(board);
 			if(queen(board,n-1))
 			return true;
 			board[i][j] = 0;
