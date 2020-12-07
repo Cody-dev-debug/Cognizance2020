@@ -47,3 +47,9 @@ If the number of queens to be placed becomes 0, then it's over, we found a solut
     }
     return false
 '''
+### Example : When the size of board is 4 X 4-
+<!-- Tables -->
+|0|0|0|0|
+|0|0|0|0|
+|0|0|0|0|
+|0|0|0|0|
