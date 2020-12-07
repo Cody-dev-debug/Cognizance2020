@@ -73,5 +73,5 @@ void main()
 		printf("The possible board of size %d is \n",a);
 		printBoard(board);
 	}
-	else printf("NO");
+	else printf("Required board pattern not possible with board size %d ",a);
 }
