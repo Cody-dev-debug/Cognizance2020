@@ -47,3 +47,91 @@ If the number of queens to be placed becomes 0, then it's over, we found a solut
     }
     return false
 '''
+### Example : When the size of board is 4 X 4-
+<!-- Tables -->
+#### Placing Queen at (1,1)
+|||||
+|-|-|-|-|
+|1|0|0|0|
+|0|0|0|0|
+|0|0|0|0|
+|0|0|0|0|
+#### Placing Queen at (2,3)
+|||||
+|-|-|-|-|
+|1|0|0|0|
+|0|0|1|0|
+|0|0|0|0|
+|0|0|0|0|
+#### Placing Queen at (4,2)
+|||||
+|-|-|-|-|
+|1|0|0|0|
+|0|0|1|0|
+|0|0|0|0|
+|0|1|0|0|
+#### No more valid moves , so after backtracking
+|||||
+|-|-|-|-|
+|1|0|0|0|
+|0|0|1|0|
+|0|0|0|0|
+|0|0|0|0|
+#### No more valid moves , so after backtracking
+|||||
+|-|-|-|-|
+|1|0|0|0|
+|0|0|0|0|
+|0|0|0|0|
+|0|0|0|0|
+#### Placing Queen at (2,4)
+|||||
+|-|-|-|-|
+|1|0|0|0|
+|0|0|0|1|
+|0|0|0|0|
+|0|0|0|0|
+#### Placing Queen at (3,2)
+|||||
+|-|-|-|-|
+|1|0|0|0|
+|0|0|0|1|
+|0|1|0|0|
+|0|0|0|0|
+#### No more valid moves , so after backtracking
+|||||
+|-|-|-|-|
+|1|0|0|0|
+|0|0|0|1|
+|0|0|0|0|
+|0|0|0|0|
+#### Placing Queen at (4,3)
+|||||
+|-|-|-|-|
+|1|0|0|0|
+|0|0|0|1|
+|0|0|0|0|
+|0|0|1|0|
+#### No more valid moves , so after backtracking
+|||||
+|-|-|-|-|
+|1|0|0|0|
+|0|0|0|1|
+|0|0|0|0|
+|0|0|0|0|
+#### No more valid moves , so after backtracking
+|||||
+|-|-|-|-|
+|1|0|0|0|
+|0|0|0|0|
+|0|0|0|0|
+|0|0|0|0|
+#### And so on .............
+
+*After repeating the above same process of placing queen and bactracking several times we find the solution which is the board shown below:*
+|||||
+|-|-|-|-|
+|0|1|0|0|
+|0|0|0|1|
+|1|0|0|0|
+|0|0|1|0|
